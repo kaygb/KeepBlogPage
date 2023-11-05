@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hexo</title>
+  
+  
+  <link href="http://example.com/atom.xml" rel="self"/>
+  
+  <link href="http://example.com/"/>
+  <updated>2023-11-05T09:07:56.028Z</updated>
+  <id>http://example.com/</id>
+  
+  <author>
+    <name>John Doe</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://example.com/archives/1.html"/>
+    <id>http://example.com/archives/1.html</id>
+    <published>2023-11-05T09:07:56.028Z</published>
+    <updated>2023-11-05T09:07:56.028Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a class="link"   href="https://hexo.io/" >Hexo<i class="fas fa-external-link-alt"></i></a>! This is your very first post. Check <a class="link"   href="https://hexo.io/docs/" >documentation<i class="fas fa-external-link-alt"></i></a> for more info. If you get any problems when using Hexo, you can find the answer in <a class="link"   href="https://hexo.io/docs/troubleshooting.html" >troubleshooting<i class="fas fa-external-link-alt"></i></a> or you can ask me on <a class="link"   href="https://github.com/hexojs/hexo/issues" >GitHub<i class="fas fa-external-link-alt"></i></a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/writing.html" >Writing<i class="fas fa-external-link-alt"></i></a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/server.html" >Server<i class="fas fa-external-link-alt"></i></a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/generating.html" >Generating<i class="fas fa-external-link-alt"></i></a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a class="link"   href="https://hexo.io/docs/one-command-deployment.html" >Deployment<i class="fas fa-external-link-alt"></i></a></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;Welcome to &lt;a class=&quot;link&quot;   href=&quot;https://hexo.io/&quot; &gt;Hexo&lt;i class=&quot;fas fa-external-link-alt&quot;&gt;&lt;/i&gt;&lt;/a&gt;! This is your very first post. Che</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TEST</title>
+    <link href="http://example.com/archives/2.html"/>
+    <id>http://example.com/archives/2.html</id>
+    <published>2023-11-05T09:07:56.028Z</published>
+    <updated>2023-11-05T09:07:56.028Z</updated>
+    
+    <content type="html"><![CDATA[<p>俗话说“懒是人类发展第一生产力”，人类因为想偷懒所以就必须先创造，最后就出现了很多可以帮助我们“偷懒”的事物。在科技发达的今天，语音助手几乎人人的手机上都有，小爱同学和米家相辅相成，米家支持接入第三方平台使得我们去diy控制一些家具设备成为可能。<br>为了开机能少伸手按一下电源键，以及关机时不必再跑到电脑跟前点一下关机，于是我就写了个程序，接入了米家，使用小爱同学控制电脑的开关机。</p><p>准备<br>注册巴法云并绑定米家<br>首先前往 <a class="link"   href="https://cloud.bemfa.com/" >https://cloud.bemfa.com/<i class="fas fa-external-link-alt"></i></a> 注册一个巴法云账号，然后前往MQTT设备云：<a class="link"   href="https://cloud.bemfa.com/tcp/devicemqtt.html" >https://cloud.bemfa.com/tcp/devicemqtt.html<i class="fas fa-external-link-alt"></i></a> 创建一个主题，注意这个主题是有命名要求的，要想让米家能够识别到，需要按照文档的说明<br>2023-08-09T13:36:26.png<br>可以创建一个灯的类型，比如：pc006，，然后昵称设置为 电脑（语音时使用这个昵称）</p><p>开启 Windows SSH<br>这一步可以直接参考：<a class="link"   href="https://zhuanlan.zhihu.com/p/391373172" >https://zhuanlan.zhihu.com/p/391373172<i class="fas fa-external-link-alt"></i></a></p><p>开启 WOL<br>WOL也就是网络唤醒，需要主板支持<br>这一步参考：<a class="link"   href="https://zhuanlan.zhihu.com/p/183704557" >https://zhuanlan.zhihu.com/p/183704557<i class="fas fa-external-link-alt"></i></a></p><p>程序介绍<br>本程序基于WOL和SSH进行电脑的开机和关机，所以需要一台可以专门跑这个程序的机器（比如nas）进行部署，可以通过docker的方式</p><p>程序配置<br>首先下载程序包：<br><a class="link"   href="https://kaygb.lanzoum.com/b0enhdb5e" >https://kaygb.lanzoum.com/b0enhdb5e<i class="fas fa-external-link-alt"></i></a><br>密码:fhnn</p><p>解压后，将application-demo.yml重命名为application.yml, 然后修改此文件中的配置信息，里面的配置信息针对于需要进行语音控制开关机的设备</p><p>server:<br>  port: 8080</p><p>ewl:<br>  mqtt:<br>    broker:<br>      ip: bemfa.com<br>      port: 9501<br>    topic: pc006<br>    secret: sv8m0cz43qw0b6eyn44rsfc82rbatjdu # 修改为你的巴法云secret<br>  pc:<br>    host: 192.168.0.55 # 修改为你的电脑 IP<br>    mac: 2C-F4-5X-2J-A2-5B 修改为你的电脑 MAC<br>  ssh:<br>    port: 22<br>    username: user # 你电脑登录的用户名<br>    password: 1234ABCD # 你电脑登录的密码</p><p>​<br>如果你是windows，可以在另一台电脑上直接双击start.bat 启动程序进行测试</p><p>使用<br>对着小爱同学说 ：开启电脑 &#x2F; 关闭电脑 即可开机或者关机电脑 这个名称取决于你在巴法云添加的设备昵称</p><p>获取IP 和 MAC<br>打开cmd，输入ipconfig &#x2F;all，即可获取</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;p&gt;俗话说“懒是人类发展第一生产力”，人类因为想偷懒所以就必须先创造，最后就出现了很多可以帮助我们“偷懒”的事物。在科技发达的今天，语音助手几乎人人的手机上都有，小爱同学和米家相辅相成，米家支持接入第三方平台使得我们去diy控制一些家具设备成为可能。&lt;br&gt;为了开机能少伸手按一</summary>
+      
+    
+    
+    
+    
+  </entry>
+  
+</feed>
